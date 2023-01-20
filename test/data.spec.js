@@ -1,23 +1,32 @@
-import { example, anotherExample } from '../src/data.js';
+
+import { sortData, filterData, computeStats } from '../src/data.js';
 
 
-describe('example', () => {
+
+describe('sortData', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof sortData).toBe('function');
   });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('returns `la data ordenada`', () => {
+    expect(sortData(data, sortBy, sortOrder)).toBe('la data ordenada');
   });
 });
 
-
-describe('anotherExample', () => {
+describe('filterData', () => {
   it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+    expect(typeof filterData).toBe('function');
   });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
+//   it('returns `example`', () => {
+//     expect(example()).toBe('example');
+  // });
 });
+
+describe('computeStats', () => {
+  it('is a function', () => {
+    expect(typeof computeStats).toBe('function');
+  });
+//   it('returns `example`', () => {
+//     expect(example()).toBe('example');
+  // });
+});
+
