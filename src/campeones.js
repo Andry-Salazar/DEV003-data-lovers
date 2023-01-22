@@ -8,18 +8,6 @@ const arrayDataChampion = Object.values(sortedArray);
 
 loadChampionsList(arrayDataChampion, "ascendente");
 
-// const queryParams = new URLSearchParams(location.search);
-// const tipoCampeon = queryParams.get("tipo");
-
-// const templateCard = document.getElementById("card");
-// const mainEl = document.getElementById("champions-list1");
-// const championDetail = document.getElementById("champion-detail");
-// const sectionFilter = document.querySelector(".filter");
-// const templateChampionDetail = document.getElementById("championDetail");
-
-
-// FUNCION PARA FILTRAR CAMPEONES:
-
 function filter(champions) {
   const queryParams = new URLSearchParams(location.search);
   const tipoCampeon = queryParams.get("tipo");
@@ -147,6 +135,20 @@ function loadChampionDetails(champion) {
 
   championDetail.appendChild(cloneTemplateChampion);
 }
+
+
+
+// const queryParams = new URLSearchParams(location.search);
+// const tipoCampeon = queryParams.get("tipo");
+
+// const templateCard = document.getElementById("card");
+// const mainEl = document.getElementById("champions-list1");
+// const championDetail = document.getElementById("champion-detail");
+// const sectionFilter = document.querySelector(".filter");
+// const templateChampionDetail = document.getElementById("championDetail");
+
+
+// FUNCION PARA FILTRAR CAMPEONES:
 
 //
 
